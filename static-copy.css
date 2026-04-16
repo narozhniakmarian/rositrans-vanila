@@ -225,6 +225,8 @@ a {
         linear-gradient(to right, #80808008 1px, transparent 1px),
         linear-gradient(to bottom, #80808008 1px, transparent 1px);
     background-size: 64px 64px;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .container {
@@ -237,6 +239,8 @@ a {
     display: grid;
     gap: 48px;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 @media (min-width: 1024px) {
